@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  background: #99badd;
+}
+header {
+  position: absolute;
+  top: 2em;
+  left: 0;
+  width: 100%;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+#avatar {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid rgb(9, 29, 65);
+}
+#avatar:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 6px 15px;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+}
+header ul li a:hover,
+header ul li a.active {
+  background: rgb(9, 29, 65);
+  color: white;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: flex-start; */
+  align-items: center;
+}
+.page1::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #99badd, transparent);
+
+  z-index: 4;
+}
+#main-bg {
+  position: absolute;
+  left: 15rem;
+  margin-top: 0.7%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.self_container {
+  margin-left: 5%;
+  height: 60vh;
+  width: 25%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 10px 0px 8px 1px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 3px 4px 8px 1px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.self_container {
+  transition: all 0.3s ease-in-out;
+}
+.self_container:hover {
+  transform: scale(1.1);
+}
+
+.upper {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  height: 7em;
+  background: rgb(1, 13, 36);
+}
+
+.center {
+  width: 100%;
+  height: 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.center img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-top: -2.1em;
+}
+.center p {
+  margin-top: 1em;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.8em;
+}
+.lower {
+  margin-top: 1em;
+  padding-left: 1.7em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7em 0.9em;
+}
+.lower h4 {
+  font-size: 1em;
+  text-align: center;
+}
+
+.lower p {
+  font-size: 0.9em;
+  text-align: center;
+}
+.sec {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+  padding: 0;
+  background: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sec h2 {
+  position: absolute;
+  top: 0;
+  font-size: 3em;
+  color: rgb(9, 29, 65);
+  margin-top: 1em;
+}
+
+/* snipet 1 Starts */
+figure {
+  display: flex;
+  justify-content: center;
+}
+#snipet1,
+#snipet2 {
+  position: absolute;
+  overflow: hidden;
+  max-width: 550px;
+  max-height: 187px;
+  width: 100%;
+  background: white;
+  text-align: center;
+  top: 8em;
+  left: 2em;
+  border: 1px solid rgb(1, 13, 36);
+  border-radius: 1em;
+  -webkit-box-shadow: 3px 4px 8px 1px rgba(1, 13, 36, 0.9);
+}
+figure.snip1320 img,
+figure.snip1321 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+figure.snip1320 i,
+figure.snip1321 i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 2px solid rgb(9, 29, 65);
+  font-size: 34px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1;
+}
+figure.snip1320 a,
+figure.snip1321 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.snip1320:after,
+figure.snip1321:after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  content: "";
+  opacity: 0.8;
+  -webkit-transform: skew(-45deg) translateX(150%);
+  transform: skew(-45deg) translateX(150%);
+  transition: all 0.3s ease-in-out;
+}
+
+figure.snip1320.red:after,
+figure.snip1321.green:after {
+  background-color: rgb(9, 29, 65);
+}
+
+figure.snip1320.red i,
+figure.snip1321.green i {
+  color: rgb(9, 29, 65);
+}
+
+figure.snip1320:hover i,
+figure.snip1320.hover i,
+figure.snip1321:hover i,
+figure.snip1321.hover i {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 300ms 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+figure.snip1320:hover:after,
+figure.snip1320.hover:after,
+figure.snip1321:hover:after,
+figure.snip1321.hover:after {
+  -webkit-transform: skew(-71.5deg) translateX(50%);
+  transform: skew(-71.5deg) translateX(50%);
+}
+
+#snipet2 {
+  top: 23em;
+  left: 2em;
+}
+/* Picture Card Ends */
+
+#bg_2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-left: 45em;
+  object-fit: inherit;
+  z-index: 1;
+}
+.page3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  position: relative;
+}
+
+/* Page 3 Container Starts */
+.page3_container {
+  height: 80vh;
+  width: 90%;
+  background: #000;
+  border: 4px solid yellow;
+  border-radius: 1em;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+}
+
+/* Social Media Links Starts */
+.links {
+  position: relative;
+  /* top: 5rem; */
+  flex: 1;
+  background: rgb(4, 13, 31);
+  border-radius: 0.7em 0 0 0.7em;
+}
+.link1,
+.link2,
+.link3,
+.link4,
+.link5 {
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0.9em 0em;
+  padding: 2.2em 0em;
+  justify-content: center;
+  position: relative;
+  top: 6em;
+  border-radius: 1em;
+}
+.link1 i,
+.link2 i,
+.link3 i,
+.link4 i,
+.link5 i {
+  position: absolute;
+  left: 1em;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+}
+.link1 label,
+.link2 label,
+.link3 label,
+.link4 label,
+.link5 label {
+  left: 6em;
+  position: absolute;
+  padding: 0rem 1rem;
+}
+
+.link1:hover {
+  border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+  color: #4267b2;
+  box-shadow: 5px 2px 5px #4267b2 inset;
+}
+.link2:hover {
+  border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+  color: #1da1f2;
+  box-shadow: 5px 2px 5px #1da1f2 inset;
+}
+.link3:hover {
+  border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+  color: #e1306c;
+  box-shadow: 5px 2px 5px #e1306c inset;
+}
+.link4:hover {
+  border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.1);
+  color: #6cc644;
+  box-shadow: 5px 2px 5px #6cc644 inset;
+}
+.link5:hover {
+  border: 2px solid black;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1);
+  color: #ff0000;
+  box-shadow: 5px 2px 5px #ff0000 inset;
+}
+
+/* Social Media Links Ends */
+
+/* About Self Starts */
+
+.about_self {
+  border-radius: 0 0.7em 0.7em 0;
+  display: flex;
+  flex: 3;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+#intro_pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -12em;
+}
+.information {
+  position: absolute;
+  right: 3.5em;
+  top: 10em;
+  color: #ffffff;
+}
+.information h4 {
+  font-size: 2em;
+}
+.information h1 {
+  font-size: 3em;
+}
+.information p1 {
+  font-size: 1.2em;
+}
+pre {
+  margin-top: 1.5em;
+  font-size: 0.9em;
+  line-height: 1.9;
+}
+
+/* About Self Ends */
+
+/* Buttons Start */
+button {
+  border: 4px solid yellow;
+  position: absolute;
+  padding: 8px 15px;
+  width: 10em;
+  color: white;
+  background: #000;
+}
+#dislike_button {
+  border-radius: 0 0 1em 0;
+  bottom: -8.9em;
+  right: -4.5em;
+}
+#like_button {
+  border-radius: 1em 0 0 0;
+  bottom: -8.9em;
+  right: 5.2em;
+}
+button:hover {
+  background: yellow;
+  color: #000;
+}
+/* Buttons End */
+
+/* Page 3 Container Ends */
+
+/* Square and Circel starts */
+.square1 {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  background: yellow;
+  border: 2px solid yellow;
+  right: 0em;
+  bottom: 0em;
+}
+.square2 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  background: yellow;
+  border: 2px solid yellow;
+  left: 0em;
+  top: 0em;
+}
+.circle3 {
+  position: absolute;
+  background: yellow;
+  z-index: 4;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  left: 2em;
+  top: 2em;
+}
+.circle3 h6 {
+  position: relative;
+  left: 1.5em;
+  top: 1.5em;
+  font-size: 35px;
+}
+/* Square and Circel Ends */

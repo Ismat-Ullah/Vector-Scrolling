@@ -1,0 +1,11 @@
+@media (min-width: 1366px), (min-height: 524px) {
+  .self_container {
+    height: 60vh;
+  }
+  .center {
+    height: 15em;
+  }
+  .lower {
+    margin-bottom: 1.5em;
+  }
+}
